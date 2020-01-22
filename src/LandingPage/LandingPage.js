@@ -1,12 +1,16 @@
 import React from 'react';
 
-import TopNav from '../TopNav/TopNav';
-
-import './LandingPage.module.css';
+import TopNav from '../LandingPage/TopNav/TopNav';
+import logo from '../assets/logo.png'
+import styles from './LandingPage.module.css';
 
 const LandingPage = props =>{
     return (
-        <TopNav />
+        <div>
+            <TopNav />
+            <img src={logo} className={styles['logo']} alt='logo'/>
+        </div>
+        
     )
 }
 
