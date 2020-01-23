@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
-import 'bulma/css/bulma.css'
+import {BrowserRouter} from 'react-router-dom';
+import 'bulma/css/bulma.css';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
 serviceWorker.unregister();
