@@ -1,0 +1,6 @@
+.input-control{
+    min-width :320px;
+}
+:global(.button).search-button{
+    background-color:red;
+}
