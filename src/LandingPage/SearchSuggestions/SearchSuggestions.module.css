@@ -1,0 +1,11 @@
+.search-suggestions{
+    display: flex;
+    margin-left:1.5rem;
+}
+ .search-suggestion{
+     margin-left:70px;
+ }
+:global(.icon).search-suggestion{
+    color:black;
+    
+}

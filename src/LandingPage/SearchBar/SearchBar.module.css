@@ -4,3 +4,6 @@
 :global(.button).search-button{
     background-color:red;
 }
+:global(.icon) {
+    color : white;
+}
