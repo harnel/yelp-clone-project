@@ -3,7 +3,12 @@
 }
 :global(.button).search-button{
     background-color:red;
+    border:none;
 }
 :global(.icon) {
     color : white;
 }
+
+:global(.field.has-addons).control{
+    margin-bottom:0;
+}                                                                             

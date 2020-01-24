@@ -2,21 +2,22 @@ import React from 'react';
 
 import styles from './SearchBar.module.css';
 const SearchBar = props =>{
+    const searchSize = props.isSmall ? "" : "is-medium"
     return (
-        <div className="field has-addons">
+        <div className={`field has-addons ${styles['control']}`}>
             <p className="control">
-                <button className="button is-static is-medium"> Search</button>
+                <button className={`button is-static ${searchSize}`}> Search</button>
             </p>
             <p className="control">
-                <input className={`input is-medium ${styles['input-control']}`} type="text" placeholder="Some .............." />
+                <input className={`input ${searchSize} ${styles['input-control']}`} type="text" placeholder="Some .............." />
             </p>
             <p className="control">
-                <button className="button is-static is-medium"> Near</button>
+                <button className={`button is-static ${searchSize}`}> Near</button>
             </p>
             <p className="control">
-                <input className={`input is-medium ${styles['input-control']}`} type="text" placeholder="body *********" />
+                <input className={`input ${searchSize} ${styles['input-control']}`} type="text" placeholder="body *********" />
             </p>
-            <button className={`button is-medium ${styles['search-button']}`}>
+            <button className={`button ${searchSize} ${styles['search-button']}`}>
                 <span className="icon ">
                     <i className="fas fa-search"></i>
                 </span>

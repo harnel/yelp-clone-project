@@ -12,7 +12,7 @@ const LandingPage = props =>{
             <div className={styles['search-area']}>
                 <TopNav />
                 <img src={logo} className={styles['logo']} alt='logo'/>
-                <SearchBar />
+                <SearchBar isSmall={false}/>
                 <SearchSuggestions />
             </div>
         </div>
