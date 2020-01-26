@@ -1,0 +1,21 @@
+.sub-nav{
+    display:flex;
+    justify-content:space-between;
+    max-width:1130px;
+    width:100%
+}
+:global(.icon).icon{
+    color:orange;
+}
+:global(.button).button{
+    border-bottom:none;
+    border-top:none;
+    border-radius:0;
+}
+.content{
+    display:flex;
+    justify-content:center;
+}
+.right-border{
+    border-right:none;
+}
